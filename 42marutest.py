@@ -12,7 +12,6 @@ patterns = [r'\d+년 \d+월 \d+일|\d+일|\d+월 \d+일|오늘|어제|내일|모
             r'[가-힣]+[자리]',
             r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+',
             r'^(\d{3,3})+[-]+(\d{2,2})+[-]+(\d{5,5})',
-            r'^(\d{1,})(-(\d{1,})){1,}',
             r'^(\d{6,6})+[-]+(\d{7,7})'
             ]
 
@@ -28,7 +27,6 @@ entity_names = ['@sys.date',
                 '@sys.fortune.starsign',
                 '@sys.url',
                 '@sys.business.number',
-                '@sys.account.number',
                 '@sys.corporate.number'
                 ]
 
