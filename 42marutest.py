@@ -100,3 +100,10 @@ def test():
 
     assert solution("서울의 면적은 605.2km²입니다") ==\
            [[['@sys.unit.area'], ['605.2km²'], [8], [16], '서울의 면적은 @sys.unit.area입니다']]
+
+    assert solution("나는 뱀띠야") ==\
+           [[['@sys.fortune.zodiac'], ['뱀띠'], [3], [5], '나는 @sys.fortune.zodiac야']]
+            
+     assert solution("내 전화번호는 010-1111-1111 이고 나는 서울특별시에 살아") == \
+           [[['@sys.location', '@sys.phone.number'], ['서울특별시', '010-1111-1111'], [28, 8], [33, 21], '내 전화번호는 @sys.phone.number 이고 나는 @sys.location에 살아']]
+
